@@ -122,14 +122,17 @@ section#banner2 img {
 
 div#card {
     background-image: url("../assets/img/modelocard.png");
+    border-style: solid;
+    border-width: 2px;
+    border-color: #bb2d3b;
 }
 
 #races {
     color: #000000;
 }
 
-#races h2 {
-    color: #1f3d81;
+#races h1 {
+    color: #bb2d3b;
 }
 
 #races .botao {
@@ -142,8 +145,8 @@ div#card {
     color: #000000;
 }
 
-#classes h2 {
-    color: #1f3d81;
+#classes h1 {
+    color: #bb2d3b;
 }
 
 #classes .botao {
