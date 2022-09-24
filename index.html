@@ -25,7 +25,7 @@
                 <div class="col-md-12" id="logo">
                     <div class="text-center">
                         <a class="navbar-brand" href="#">
-                            <img class="img-fluid py-4" src="./assets/img/LOGO.png" alt="logo" width="130 px">
+                            <img class="img-fluid py-4" src="./assets/img/LOGO.png" alt="logo" width="120 px">
                         </a>
                     </div>
                 </div>
@@ -52,12 +52,12 @@
                                     href="#classes"><strong>Classes</strong></a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link mx-3 scroll-to-id" aria-current="page"
-                                    href="#library"><strong>Saiba Mais</strong></a>
+                                <a class="nav-link mx-3 scroll-to-id" aria-current="page" href="#library"><strong>Saiba
+                                        Mais</strong></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link mx-3 scroll-to-id" aria-current="page"
-                                    href="#building"><strong>Rolamento de Dados</strong></a>
+                                    href="#building"><strong>Criando seu Personagem</strong></a>
                             </li>
                         </ul>
                     </div>
@@ -75,8 +75,8 @@
 
     <section id="races">
         <div class="container">
-            <div class="row">
-                <div class="text-center col-12 col-md-8 offset-md-2 py-4">
+            <div class="row py-4 justify-content-left">
+                <div class="col-8">
                     <h2>Raças</h2>
 
                     <p>Eles povoam os mundos, combatem em guerras, conquistam tesouros e viram lendas entre seus povos.
@@ -85,8 +85,84 @@
                         maneirismos, e interpretar cada uma destas singularidades de raças diferentes,
                         já é de uma diversão.
                     </p>
-                    <a class="btn btn-primary scroll-to-id" style="background-color: #1f3d81; border-radius: 1em"
-                        href="#library">Saiba Mais</a>
+
+
+                </div>
+                <div class="col-4 p-5">
+                    <a class="btn btn-primary scroll-to-id" style="border-radius: 1em; padding: 20px;"
+                        href="#displayraces">Ver Raças</a>
+                    <a class="btn btn-primary scroll-to-id" style="border-radius: 1em; padding: 20px;"
+                        href="#library">Saiba
+                        Mais</a>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row" id="displayraces">
+                <div class="col-6">
+                    <div class="text-center col-12 col-md-11 offset-md-1 py-4">
+                        <div class="row">
+                            <ul class="nav w-70 justify-content-left">
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="eventHandlerRace(1)"><strong>Anão</strong></button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="eventHandlerRace(2)"><strong>Elfo</strong></button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="eventHandlerRace(3)"><strong>Halfling</strong></button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="eventHandlerRace(4)"><strong>Humano</strong></button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="eventHandlerRace(5)"><strong>Draconato</strong></button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="eventHandlerRace(6)"><strong>Gnomo</strong></button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="eventHandlerRace(7)"><strong>Meio-Elfo</strong></button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="eventHandlerRace(8)"><strong>Meio-Orc</strong></button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="eventHandlerRace(9)"><strong>Tiefling</strong></button>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div id="card" class="my-5 text-center text-xl-start justify-content-left text-decoration"
+                            style="background-color: #cdcbff; border-radius: 26px;">
+                            <div class='p-5'>
+                                <h1 class="display-5 fw-bolder text-black mb-1" style="font-size: 40px; padding: 20px;"
+                                    id="racename">
+                                    Escolha uma Raça:</h1>
+                                <p class="display-6 fw-normal text-black-30 mb-3" id="attributes"></p>
+                                <strong>
+                                    <p id="racedescription" class="justify-content-center"></p>
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+
+                    <div class="nav w-70 justify-content-center offset-md-2 py-4">
+                        <img class="img-fluid rounded-3 my-5" style="max-width: 500px; max-height: 600px;"
+                            id="raceImage" src="././assets/img/Races/std.png" alt="..." />
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,153 +170,121 @@
     </section>
 
     <section id="banner2">
-        <div class="container">
-            <ul class="nav w-70 justify-content-center">
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary"
-                        onclick="eventHandlerRace(1)"><strong>Anão</strong></button>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary"
-                        onclick="eventHandlerRace(2)"><strong>Elfo</strong></button>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary"
-                        onclick="eventHandlerRace(3)"><strong>Halfling</strong></button>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary"
-                        onclick="eventHandlerRace(4)"><strong>Humano</strong></button>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary"
-                        onclick="eventHandlerRace(5)"><strong>Draconato</strong></button>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary"
-                        onclick="eventHandlerRace(6)"><strong>Gnomo</strong></button>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary"
-                        onclick="eventHandlerRace(7)"><strong>Meio-Elfo</strong></button>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary"
-                        onclick="eventHandlerRace(8)"><strong>Meio-Orc</strong></button>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary"
-                        onclick="eventHandlerRace(9)"><strong>Tiefling</strong></button>
-                </li>
-            </ul>
-            </nav>
-        </div>
-        <div class="container px-5">
-            <div class="row gx-5 align-items-top justify-content-center">
-                <div class="col-lg-8 col-xl-7 col-xxl-6">
-                    <div class="my-5 text-center text-xl-start">
-                        <h1 class="display-5 fw-bolder text-black mb-1" id="racename">Escolha uma raça</h1>
-                        <p class="display-6 fw-normal text-black-30 mb-3" id="attributes"></p>
-                        <strong>
-                            <p id="racedescription"></p>
-                        </strong>
-                    </div>
-                </div>
-                <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5"
-                        id="raceImage" src="././assets/img/Races/std.png" alt="..." /></div>
-            </div>
-        </div>
+
     </section>
 
     <section id="classes">
         <div class="container">
-            <div class="row">
-                <div class="text-center col-12 col-md-8 offset-md-2 py-4">
-                    <h2>Classes</h2>
+            <div class="row py-4 justify-content-left">
+                <div class="col-8">
+                    <h1>Classes</h1>
 
-                    <p>Eles estão prontos para enfrentar os desafios mais terríveis, os inimigos mais sinistros e
+                    <p>Eles estão prontos para enfrentar os desafios mais terríveis, os inimigos mais sinistros
+                        e
                         poderosos em todo mundo.
-                        <br>Seja se aventurando nas cavernas pernumbrosas ou desbravando campos de batalha caóticos, é
-                        essêncial que cada membro do grupo possa cobrir as fraquezas de seus companheiros com suas
+                        <br>Seja se aventurando nas cavernas pernumbrosas ou desbravando campos de batalha
+                        caóticos,
+                        é
+                        essêncial que cada membro do grupo possa cobrir as fraquezas de seus companheiros com
+                        suas
                         próprias especialidades e estilos de luta.
                     </p>
-                    <a class="btn btn-primary scroll-to-id" style="background-color: #1f3d81; border-radius: 1em"
-                        href="#library">Saiba Mais</a>
+
+
+                </div>
+                <div class="col-4 p-5">
+                    <a class="btn btn-primary scroll-to-id" style="border-radius: 1em; padding: 20px;"
+                        href="#displayclasses">Ver Classes</a>
+                    <a class="btn btn-primary scroll-to-id" style="border-radius: 1em; padding: 20px;"
+                        href="#library">Saiba
+                        Mais</a>
+                </div>
+            </div>
+            <hr>
+            <div class="row" id="displayclasses">
+                <div class="col-6">
+                    <div class="text-center col-12 col-md-11 offset-md-1 py-4">
+                        <div class="row">
+                            <ul class="nav w-70 justify-content-left offset-md-0 py-4">
+                                <li class="nav-item">
+                                    <button type="button" id="link" class="btn btn-outline-primary"
+                                        onclick="eventHandlerClass(1)"><strong>Bárbaro</strong></button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="eventHandlerClass(2)"><strong>Bardo</strong></button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="eventHandlerClass(3)"><strong>Bruxo</strong></button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="eventHandlerClass(4)"><strong>Clérigo</strong></button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="eventHandlerClass(5)"><strong>Druida</strong></button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="eventHandlerClass(6)"><strong>Feiticeiro</strong></button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="eventHandlerClass(7)"><strong>Guerreiro</strong></button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="eventHandlerClass(8)"><strong>Ladino</strong></button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="eventHandlerClass(9)"><strong>Mago</strong></button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="eventHandlerClass(10)"><strong>Monge</strong></button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="eventHandlerClass(11)"><strong>Paladino</strong></button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="eventHandlerClass(12)"><strong>Patrulheiro</strong></button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="card" class="my-5 text-center text-xl-start justify-content-left text-decoration"
+                            style="background-color: #cdcbff; border-radius: 26px;">
+                            <div class='p-5'>
+                                <h1 class="display-5 fw-bolder text-black mb-1" style="font-size: 40px; padding: 20px;"
+                                    id="classname">
+                                    Escolha uma classe:</h1>
+                                <p class="display-6 fw-normal text-black-30 mb-3" id="lifedice"></p>
+                                <strong>
+                                    <p id="classdescription" class="justify-content-center"></p>
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+
+                    <div class="nav w-70 justify-content-center offset-md-2 py-4">
+                        <img class="img-fluid rounded-3 my-5" style="max-width: 460px; max-height: 600px;"
+                            id="classImage" src="././assets/img/Classes/std.png" alt="..." />
+                    </div>
                 </div>
             </div>
         </div>
 
     </section>
 
-    <section id="banner2">
-        <div class="container">
-            <ul class="nav w-70 justify-content-center">
-                <li class="nav-item">
-                    <button type="button" id="link" class="btn btn-outline-primary"
-                        onclick="eventHandlerClass(1)"><strong>Bárbaro</strong></button>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary"
-                        onclick="eventHandlerClass(2)"><strong>Bardo</strong></button>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary"
-                        onclick="eventHandlerClass(3)"><strong>Bruxo</strong></button>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary"
-                        onclick="eventHandlerClass(4)"><strong>Clérigo</strong></button>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary"
-                        onclick="eventHandlerClass(5)"><strong>Druida</strong></button>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary"
-                        onclick="eventHandlerClass(6)"><strong>Feiticeiro</strong></button>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary"
-                        onclick="eventHandlerClass(7)"><strong>Guerreiro</strong></button>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary"
-                        onclick="eventHandlerClass(8)"><strong>Ladino</strong></button>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary"
-                        onclick="eventHandlerClass(9)"><strong>Mago</strong></button>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary"
-                        onclick="eventHandlerClass(10)"><strong>Monge</strong></button>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary"
-                        onclick="eventHandlerClass(11)"><strong>Paladino</strong></button>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary"
-                        onclick="eventHandlerClass(12)"><strong>Patrulheiro</strong></button>
-                </li>
-            </ul>
-            </nav>
-        </div>
-        <div class="container px-5">
-            <div class="row gx-5 align-items-top justify-content-center">
-                <div class="col-lg-8 col-xl-7 col-xxl-6">
-                    <div class="my-5 text-center text-xl-start">
-                        <h1 class="display-5 fw-bolder text-black mb-1" id="classname">Escolha uma classe</h1>
-                        <p class="display-6 fw-normal text-black-30 mb-3" id="lifedice"></p>
-                        <strong>
-                            <p id="classdescription"></p>
-                        </strong>
-                    </div>
-                </div>
-                <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5"
-                        id="classImage" src="././assets/img/Classes/std.png" alt="..." /></div>
-            </div>
-        </div>
+    <section id="banner3">
+
     </section>
 
     <section id="library">
@@ -294,23 +338,85 @@
             </div>
         </div>
     </section>
+    <div><p></p></div>
+    <section id="banner4">
+
+    </section>
 
     <section id="building">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center my-2">
-                    <h2><strong>Rolamento de Dados</strong></h2>
+                <div class="col-12 text-center my-3">
+                    <h2><strong>Criação de Personagem</strong></h2>
                 </div>
             </div>
 
-            <form action="./php/rick-rolled.php" method="POST" target="_BLANK">
-             
+            <form action="JavaScript:rickrolled('https://youtube.com/watch?v=dQw4w9WgXcQ')">
+
+                <div class="my-1">
+                    <label for="inputTelefone" class="form-label mt-3">Nome</label>
+                    <input name="telefone" class="form-control" id="username"
+                        placeholder="Ex: Medivh of Tirisfal"></input>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="inputTelefone" class="form-label mt-3">Raça</label>
+                        <select class="form-select">
+                            <option>Anão</option>
+                            <option>Elfo</option>
+                            <option>Halfling</option>
+                            <option>Humano</option>
+                            <option>Draconato</option>
+                            <option>Gnomo</option>
+                            <option>Meio-Elfo</option>
+                            <option>Meio-Orc</option>
+                            <option>Tiefling</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputTelefone" class="form-label mt-3">Classe</label>
+                        <select class="form-select">
+                            <option>Bárbaro</option>
+                            <option>Bardo</option>
+                            <option>Bruxo</option>
+                            <option>Clérigo</option>
+                            <option>Druida</option>
+                            <option>Feiticeiro</option>
+                            <option>Guerreiro</option>
+                            <option>Ladino</option>
+                            <option>Mago</option>
+                            <option>Monge</option>
+                            <option>Paladino</option>
+                            <option>Patrulheiro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="my-4">
+                    <label for="inputBackground" class="form-label">História</label>
+                    <textarea class="form-control" placeholder="Ex: Mago Medivh foi o último Guardião de Tirisfal, uma antiga linhagem de poderosos protetores, cuja missão era lutar contra a Legião Ardente..."
+                        name="background" rows="3"></textarea>
+                </div>
+
+                <div class="my-4">
+                    <label for="inputBackground" class="form-label">Aparência</label>
+                    <textarea class="form-control" placeholder="Ex: Possui longos cabelos negros e uma barba brilhante, seus olhos soberanos e malignos..."
+                        name="background" rows="3"></textarea>
+                </div>
+
+                <div class="my-4">
+                    <label for="inputBackground" class="form-label">Traços</label>
+                    <textarea class="form-control" placeholder="Ex: Medivh, em élfico, significa aquele que guarda segredos, o que condiz com a personalidade reservada e objetiva do grande mago obscuro"
+                        name="background" rows="3"></textarea>
+                </div>
 
                 <input type="hidden" name="_next" value="">
 
                 <input type="hidden" name="_captcha" value="false">
-                <button type="submit" class="mt-3 mb-5 btn btn-primary" value="1" name="rickroll"
-                    style="border-radius:3em;">Rolar Dados</button>
+                <button type="submit" class="mt-3 mb-5 btn btn-primary" name="rickroll"
+                    style="border-radius:3em;">Criar Personagem</button>
             </form>
 
 
@@ -335,7 +441,7 @@
     </section>
 
     <footer>
-        <p style="font-size: 12px;">&copy; Augusto de B. Almeida</p>
+        <p style="font-size: 14px;">&copy; Augusto de B. Almeida</p>
         <p>RA 1680482011040</p>
     </footer>
 
@@ -364,8 +470,8 @@
                 </div>
                 <div class="modal-body">
                     <img src="./assets/img/dm.jpg" class="img-fluid" />
-                    <a href="./assets/files/DungeonMastersBook.pdf" download="Dungeon Masters's Guide.pdf" type="application/pdf"
-                        style="text-decoration:none"><span>Download</span><span>PDF</span></a>
+                    <a href="./assets/files/DungeonMastersBook.pdf" download="Dungeon Masters's Guide.pdf"
+                        type="application/pdf" style="text-decoration:none"><span>Download</span><span>PDF</span></a>
                 </div>
             </div>
         </div>
