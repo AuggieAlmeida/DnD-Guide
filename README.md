@@ -13,11 +13,9 @@
 
 ## Raças
 ![](showcase/races1.png)
-![](showcase/races2.png)
 
 ## Classes
 ![](showcase/classes1.png)
-![](showcase/classes2.png)
 
 ## Arquivos e wiki
 ![](showcase/library.png)
