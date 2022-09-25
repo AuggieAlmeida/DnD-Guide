@@ -20,56 +20,56 @@ function eventHandlerClass(id) {
 
         case 3:
             getTag('classname').innerHTML = "Bruxo"
-            getTag('lifedice').innerHTML = "Dados de vida: 1d8 por nível de bardo"
+            getTag('lifedice').innerHTML = "Dados de vida: 1d8 por nível de bruxo"
             getTag('classdescription').innerHTML = "Descrição: Os bruxos são desbravadores do conhecimento que existe escondido no tecido do multiverso. Através de pactos feitos com seres misteriosos detentores de poder sobrenatural, os bruxos desbloqueiam efeitos mágicos tão sutis quanto espetaculares. Extraindo o conhecimento antigo de seres como nobres fadas, demônios, diabos, bruxas e entidades alienígenas do Reino Distante, os bruxos remontam segredos arcanos para aprimorar seus próprios poderes."
             getTag('classImage').src = "./assets/img/Classes/bruxo.png"
             break;
 
         case 4:
             getTag('classname').innerHTML = "Clérigo"
-            getTag('lifedice').innerHTML = "Dados de vida: 1d8 por nível de bardo"
+            getTag('lifedice').innerHTML = "Dados de vida: 1d8 por nível de clérigo"
             getTag('classdescription').innerHTML = "Descrição: Clérigos são intermediadores entre o mundo mortal e o distante plano dos deuses. Tão variados quanto os deuses que servem, clérigos se esforçam para ser a própria mão de seus deuses. Não é apenas um sacerdote comum, mas alguém investido de poder divino."
             getTag('classImage').src = "./assets/img/Classes/clerigo.png"
             break;
 
         case 5:
             getTag('classname').innerHTML = "Druida"
-            getTag('lifedice').innerHTML = "Dados de vida: 1d8 por nível de bardo"
+            getTag('lifedice').innerHTML = "Dados de vida: 1d8 por nível de druida"
             getTag('classdescription').innerHTML = "Descrição: Quer seja convocando as forças elementais da natureza, ou emulando as criaturas do mundo animal, os druidas são encarnações da resistência, astúcia e fúria da natureza. Eles não se consideram donos da natureza. Ao invés disso, eles se veem como extensões da vontade indomável da natureza."
             getTag('classImage').src = "./assets/img/Classes/druida.png"
             break;
 
         case 6:
             getTag('classname').innerHTML = "Feiticeiro"
-            getTag('lifedice').innerHTML = "Dados de vida: 1d6 por nível de bardo"
+            getTag('lifedice').innerHTML = "Dados de vida: 1d6 por nível de feiticeiro"
             getTag('classdescription').innerHTML = "Descrição: Os feiticeiros carregam um patrimônio mágico conferido a eles por uma linhagem exótica, alguma influência de outro mundo ou exposição a forças cósmicas desconhecidas. Não é possível estudar feitiçaria como se aprende um idioma, assim como não se aprende a viver uma vida lendária. Ninguém escolhe a feitiçaria: os poderes escolhem o feiticeiro."
             getTag('classImage').src = "./assets/img/Classes/feiticeiro.png"
             break;
 
         case 7:
             getTag('classname').innerHTML = "Guerreiro"
-            getTag('lifedice').innerHTML = "Dados de vida: 1d10 por nível de bardo"
+            getTag('lifedice').innerHTML = "Dados de vida: 1d10 por nível de guerreiro"
             getTag('classdescription').innerHTML = "Descrição: Todos guerreiros são heróis, talvez a mais diversificada classe de personagens nos mundos de DUNGEONS & DRAGONS. Cavaleiros em missões, lordes conquistadores, campeões reais, infantaria de elite, mercenários rígidos e bandidos reis, como guerreiros, eles compartilham de uma maestria com armas e armaduras sem precedentes, bem como um vasto conhecimento e habilidades em combate. E eles estão bem familiarizados com a morte, seja simplesmente conhecendo-a ou desafiando-a cara a cara."
             getTag('classImage').src = "./assets/img/Classes/guerreiro.png"
             break;
 
         case 8:
             getTag('classname').innerHTML = "Ladino"
-            getTag('lifedice').innerHTML = "Dados de vida: 1d8 por nível de bardo"
+            getTag('lifedice').innerHTML = "Dados de vida: 1d8 por nível de ladino"
             getTag('classdescription').innerHTML = "Descrição: Ladinos contam com sua perícia, furtividade e as vulnerabilidades de seus inimigos para obter vantagem em qualquer situação. Eles possuem uma habilidade especial para encontrar a solução para praticamente qualquer problema, demonstrando desenvoltura e versatilidade, a chave de qualquer grupo aventureiro de sucesso."
             getTag('classImage').src = "./assets/img/Classes/ladino.png"
             break;
 
         case 9:
             getTag('classname').innerHTML = "Mago"
-            getTag('lifedice').innerHTML = "Dados de vida: 1d6 por nível de bardo"
+            getTag('lifedice').innerHTML = "Dados de vida: 1d6 por nível de mago"
             getTag('classdescription').innerHTML = "Descrição: Os magos são usuários de magia soberanos, unidos e definidos como uma classe pelas magias que conjuram. Usufruindo de uma trama sutil de magia que permeia o cosmos, os magos conjuram magias explosivas de fogo, arcos de relâmpagos, enganos sutis e controle de mentes de força bruta. Sua magia invoca monstros de outros planos de existência, vislumbra o futuro ou transforma inimigos mortos em zumbis. Suas magias mais poderosas podem transformar uma substância em outra, evocar meteoros que caem do céu ou abrir portais para outros mundos."
             getTag('classImage').src = "./assets/img/Classes/mago.png"
             break;
 
         case 10:
             getTag('classname').innerHTML = "Monge"
-            getTag('lifedice').innerHTML = "Dados de vida: 1d8 por nível de bardo"
+            getTag('lifedice').innerHTML = "Dados de vida: 1d8 por nível de monge"
             getTag('classdescription').innerHTML = "Descrição: Qualquer que seja suas disciplinas, os monges partilha de sua habilidade de aproveitar magicamente da energia que flui em seus corpos. Se canalizada como um exibição impressionante de maestria do combate, ou como um foco mais sutil de habilidade defensiva e velocidade, essa energia infunde tudo que um monge faz."
             getTag('classImage').src = "./assets/img/Classes/monge.png"
             break;
@@ -82,7 +82,7 @@ function eventHandlerClass(id) {
             break;
         case 12:
             getTag('classname').innerHTML = "Patrulheiro"
-            getTag('lifedice').innerHTML = "Dados de vida: 1d10 por nível de paladino"
+            getTag('lifedice').innerHTML = "Dados de vida: 1d10 por nível de patrulheiro"
             getTag('classdescription').innerHTML = "Descrição: Longe do alvoroço das cidades e vilas, passando das divisas que abrigam a fazendas mais longínquas dos horrores do ermo, entre as árvores densas de florestas sem trilhas e através das vastas planícies vazias, os patrulheiros mantem sua vigília interminável."
             getTag('classImage').src = "./assets/img/Classes/patrulheiro.png"
             break;
